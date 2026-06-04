@@ -45,3 +45,17 @@ Thumbs.db
 
 .env
 *.log
+
+# --- Firmware & Embedded Configurations ---
+# Secrets
+household-intelligence/apps/firmware/private_credentials.ini
+apps/firmware/private_credentials.ini
+
+# PlatformIO local build artifacts
+**/apps/firmware/.pio/
+**/apps/firmware/.clang_complete
+**/apps/firmware/.gcc-flags.json
+
+# LilyGO Hardware Dependencies (Local copies to keep repo clean)
+**/apps/firmware/boards/
+**/apps/firmware/lib/

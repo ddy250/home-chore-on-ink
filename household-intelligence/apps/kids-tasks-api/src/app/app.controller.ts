@@ -13,6 +13,11 @@ export class AppController {
 
         const input = prompt || defaultPrompt;
 
+        return [
+            { id: 1, title: "Clean the kitchen" },
+            { id: 2, title: "Walk the dog" }
+        ];
+
         return await this.geminiService.generateDailyTasks(input);
     }
 }
